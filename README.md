@@ -3,8 +3,8 @@ An analysis project using a retail dataset from Kaggle https://www.kaggle.com/da
 
 # Outputa
 ## Final dashboard 
-- [Tableau](https://public.tableau.com/views/EcommercePortfolio/QuantityMetrics?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link). Dashboard inspiration from https://www.youtube.com/watch?v=dahrmqT5GD4&t=7172s Many thanks to the original creator of this video
-- [PowerBI] (https://drive.google.com/drive/u/0/folders/1cROTIPGlSgh7PIyC65uyYMS8uydIFC6l)
+- [Tableau Dashboard](https://public.tableau.com/views/EcommercePortfolio/QuantityMetrics?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link). Dashboard inspiration from https://www.youtube.com/watch?v=dahrmqT5GD4&t=7172s Many thanks to the original creator of this video
+- [PowerBI Dashboard](https://drive.google.com/drive/u/0/folders/1cROTIPGlSgh7PIyC65uyYMS8uydIFC6l)
      
 <img width="1155" alt="image" src="https://github.com/user-attachments/assets/f67be7e2-5a28-44d4-9826-d663a2918b7d">
 
