@@ -1,5 +1,6 @@
 -- Question 1
-""" Sales performance(*) of each Store in Jan 2021 ( Revenue, Order, Item Sold, AOV (Average Order Value), ASP (Average Selling Price))
+"""
+Sales performance(*) of each Store in Jan 2021 ( Revenue, Order, Item Sold, AOV (Average Order Value), ASP (Average Selling Price))
 """
 SELECT
     platform,
@@ -33,6 +34,9 @@ WHERE
 GROUP BY
     platform;
 -- Question 2
+"""
+Top 5 revenue contributed Product in Jan 2021
+"""
 SELECT
     "Product SKU",
     SUM(
@@ -57,6 +61,9 @@ ORDER BY
 LIMIT
     5;
 -- Question 3
+"""
+The first date that each Product has been sold
+"""
 SELECT
     "Product SKU",
     MIN(delivery_date) AS first_sold_date
@@ -73,6 +80,9 @@ GROUP BY
 ORDER BY
     first_sold_date;
 -- Question 4
+"""
+Seller Promotion Ratio (Seller Promotion/ Revenue) of each Product category.
+"""
 SELECT
     "Category" AS product_category,
     SUM(seller_promo) / SUM(
@@ -93,6 +103,10 @@ GROUP BY
 ORDER BY
     seller_promotion_ratio DESC;
 -- Question 5
+"""
+Which Product SKU has the highest cancellation ratio in May 2021? And what is the main reason for cancellation of that product?
+ct?
+"""
     WITH cancellation_ratio AS (
         SELECT
             "Product SKU",
@@ -135,6 +149,9 @@ ORDER BY
 LIMIT
     1;
 -- Question 6
+"""
+Percentage of late delivery orders of Shopee and Lazada( order has delivery lead time > = 3 days is considered as late order) 
+"""
 SELECT
     platform,
     COUNT(*) FILTER (WHERE cast(delivery_date as DATE) - cast(order_created_date as DATE) >= 3)::float / COUNT(*) * 100
